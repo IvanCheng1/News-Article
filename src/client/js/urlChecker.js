@@ -10,5 +10,4 @@ function validURL(str) {
     return !!pattern.test(str);
 }
 
-// export { checkForName }
 export { validURL }
