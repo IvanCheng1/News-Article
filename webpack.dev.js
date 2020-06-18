@@ -12,6 +12,9 @@ module.exports = {
         libraryTarget: 'var',
         library: 'Client'
     },
+    devServer: {
+        port: 8080
+    },
     module: {
         rules: [{
                 test: '/\.js$/',

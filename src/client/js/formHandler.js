@@ -14,7 +14,7 @@ function handleSubmit(event) {
     }
     // spinning wheel
     document.getElementById('loader').style.display = 'block'
-    const url = 'https://natural-language-demo.herokuapp.com/api'
+    const url = '/api'
     const data = postData(url, formText)
         .then((data) => {
             updateUI(data)
