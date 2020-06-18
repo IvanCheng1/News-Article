@@ -1,6 +1,9 @@
 # Project Instructions
 
-This repo is your starter code for the project. It is the same as the starter code we began with in lesson 2. Install and configure Webpack just as we did in the course. Feel free to refer to the course repo as you build this one, and remember to make frequent commits and to create and merge branches as necessary!
+Part of Udacity's Front End Developer Programme.
+
+## Overview
+This project involved creating an asynchronous web app that uses Open Weather Map API and user data to dynamically update the UI.
 
 The goal of this project is to give you practice with:
 - Setting up Webpack
