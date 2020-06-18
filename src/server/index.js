@@ -22,13 +22,10 @@ app.use(bodyParser.json());
 console.log(__dirname)
 
 app.get('/', function(req, res) {
-    res.sendFile('dist/index.html')
-    console.log('get')
+    res.sendFile(path.join(__dirname, 'dist/index.html'))
 })
 
 app.post('/api', function(req, res) {
-    // console.log(req.body.data)
-
     textapi.sentiment({
         'url': req.body.data
     }, function(error, response) {
@@ -48,5 +45,5 @@ app.get('/test', function(req, res) {
 
 // designates what port the app will listen to for incoming requests
 app.listen(PORT, function() {
-    console.log(`Example app listening on port ${PORT}!`)
+    console.log(`App listening on port ${PORT}!`)
 })

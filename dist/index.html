@@ -67,6 +67,8 @@
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('/service-worker.js');
             });
+        } else {
+            console.log("Service Worker not supported")
         }
     </script>
 <script type="text/javascript" src="main.js"></script></body>
