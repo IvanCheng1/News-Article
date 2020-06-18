@@ -15,7 +15,6 @@ function handleSubmit(event) {
     // spinning wheel
     document.getElementById('loader').style.display = 'block'
     const url = '/api'
-    console.log(url)
     const data = postData(url, formText)
         .then((data) => {
             updateUI(data)
