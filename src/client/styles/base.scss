@@ -1,14 +1,149 @@
 body {
+    background: rgb(136, 203, 171);
+    background: linear-gradient(180deg, rgba(136, 203, 171, 1) 0%, rgb(73, 158, 223) 100%);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
 }
 
 main {
     flex: 2;
+    padding-bottom: 20px;
 }
 
 section {
     max-width: 800px;
     margin: 50px auto;
+}
+
+.description {
+    text-align: justify;
+    max-width: 600px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#container {
+    grid-template-areas: "a1 a2 a3 a4" "b1 b2 b3 b4" "c c c c";
+    margin: auto;
+}
+
+#container div {
+    padding-top: 10px;
+    margin: 3px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: grid;
+}
+
+.box {
+    // border: 2px solid red;
+}
+
+#polarity {
+    grid-area: a2;
+}
+
+#polarity_title {
+    grid-area: a1;
+    text-align: right;
+}
+
+#subjectivity {
+    grid-area: a4;
+}
+
+#subjectivity_title {
+    grid-area: a3;
+    text-align: right;
+}
+
+#polarity_confidence {
+    grid-area: b2;
+}
+
+#polarity_confidence_title {
+    grid-area: b1;
+    text-align: right;
+}
+
+#subjectivity_confidence {
+    grid-area: b4;
+}
+
+#subjectivity_confidence_title {
+    grid-area: b3;
+    text-align: right;
+}
+
+#text {
+    grid-area: c;
+    padding-top: 25px;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#loader {
+    display: none;
+    margin: auto;
+    border: 8px solid #f3f3f3;
+    /* Light grey */
+    border-top: 8px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }

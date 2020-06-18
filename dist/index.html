@@ -14,35 +14,51 @@
 
 <body>
 
-    <header>
+    <!-- <header class='header'>
         <div class="">
             Logo
         </div>
         <div class="">
             navigation
         </div>
-    </header>
+    </header> -->
 
     <main>
+        <header class='title box'>
+            <h1>Evaluate articles using Natural Language Processing</h1>
+        </header>
         <section>
-            <form class="" onsubmit="return Client.handleSubmit(event)">
-                <input id="name" type="text" name="input" value="" placeholder="Name">
+            <p class='description'>
+                This web app runs Natural Language Processing (NLP) on articles or blogs found on websites. It returns information about the article, like whether the content is subjective (opinion) or objective (fact-based) and whether it is positive, neutral, or negative
+                in tone.
+            </p>
+        </section>
+        <section>
+            <form id="form" onsubmit="return Client.handleSubmit(event)">
+                <input id="name" type="text" name="input" value="" placeholder="https://www.bbc.co.uk/news/...">
                 <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
             </form>
-            <section>
+        </section>
+        <div id="loader"></div>
+        <section id='container' class='hide animate-bottom'>
+            <div id="polarity_title" class='box'>Polarity: </div>
+            <div id="polarity" class='box'></div>
 
-                <section>
-                    <strong>Form Results:</strong>
-                    <div id="polarity"></div>
-                    <div id="subjectivity"></div>
-                    <div id="polarity_confidence"></div>
-                    <div id="subjectivity_confidence"></div>
-                    <div id="text"></div>
-                </section>
+            <div id="subjectivity_title" class='box'>Subjectivity: </div>
+            <div id="subjectivity" class='box'></div>
+
+            <div id="polarity_confidence_title" class='box'>Confidence: </div>
+            <div id="polarity_confidence" class='box'></div>
+
+            <div id="subjectivity_confidence_title" class='box'>Confidence: </div>
+            <div id="subjectivity_confidence" class='box'></div>
+
+            <div id="text" class='box'></div>
+        </section>
     </main>
 
     <footer>
-        <p>This is a beautiful footer</p>
+        <p class='footer_notes'>The Natural Language Processor is provided by Aylien API</p>
     </footer>
 
 <script type="text/javascript" src="main.js"></script></body>
