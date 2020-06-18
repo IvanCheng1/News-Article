@@ -1,3 +1,5 @@
+global.fetch = require("node-fetch");
+
 function handleSubmit(event) {
     event.preventDefault();
 
@@ -62,4 +64,4 @@ function clearResults() {
     document.getElementById('container').classList.remove('show')
 }
 
-export { handleSubmit }
+export { handleSubmit, postData }
