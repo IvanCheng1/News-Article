@@ -6,7 +6,7 @@ var path = require('path')
 const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
 const bodyParser = require('body-parser');
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 8000
 const cors = require('cors')
 
 var textapi = new aylien({
