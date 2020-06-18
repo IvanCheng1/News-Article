@@ -14,7 +14,7 @@ function handleSubmit(event) {
     }
     // spinning wheel
     document.getElementById('loader').style.display = 'block'
-    const url = '/api'
+    const url = '/test'
     console.log(url)
     const data = postData(url, formText)
         .then((data) => {
