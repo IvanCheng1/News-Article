@@ -19,8 +19,11 @@ function handleSubmit(event) {
     // spinning wheel
     document.getElementById('loader').style.display = 'block'
 
+    // prepare url
+    const PORT = process.env.PORT || 8000
+    const url = `http://localhost:${PORT}/api`
+
     // send post request
-    const url = '/api'
     const data = postData(url, formText)
         .then((data) => {
             updateUI(data)
