@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 console.log(__dirname)
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, 'dist/index.html'))
+    res.sendFile('dist/index.html')
 })
 
 app.post('/api', function(req, res) {

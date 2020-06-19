@@ -4,7 +4,7 @@ import { postData } from '../client/js/formHandler'
 
 test('handleSubmit test', async() => {
     const data = 'https://www.bbc.co.uk/news/uk-53091856'
-    const url = 'http://localhost:8080/api'
+    const url = 'http://localhost:8000/api'
     const res = await postData(url, data);
 
     expect(res['polarity']).toBe('neutral');

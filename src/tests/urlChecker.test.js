@@ -1,9 +1,9 @@
-import { validURL } from '../client/js/urlChecker'
+import { isValidURL } from '../client/js/urlChecker'
 
 test('URL checker: true', () => {
-    expect(validURL('https://www.bbc.co.uk/news/uk-53091856')).toBe(true);
+    expect(isValidURL('https://www.bbc.co.uk/news/uk-53091856')).toBe(true);
 });
 
 test('URL checker: false', () => {
-    expect(validURL('ThisIsNotAValidUrl')).toBe(false);
+    expect(isValidURL('ThisIsNotAValidUrl')).toBe(false);
 });

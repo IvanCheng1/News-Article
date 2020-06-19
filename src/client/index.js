@@ -1,4 +1,4 @@
-import { validURL } from './js/urlChecker'
+import { isValidURL } from './js/urlChecker'
 import { handleSubmit } from './js/formHandler'
 
 import './styles/resets.scss'
@@ -9,5 +9,5 @@ import './styles/header.scss'
 
 export {
     handleSubmit,
-    validURL
+    isValidURL
 }
